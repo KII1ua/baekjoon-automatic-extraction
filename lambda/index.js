@@ -29,7 +29,7 @@ const LEVELS = [
 const IS_LOCAL = !process.env.AWS_LAMBDA_FUNCTION_NAME && !process.env.AWS_ACCESS_KEY_ID;
 
 const dbClient = new DynamoDBClient({
-  region: AWS_REGION,
+  region: process.env.AWS_REGION,
   endpoint: IS_LOCAL ? LOCAL_ENDPOINT : undefined,
   credentials: IS_LOCAL 
     ? { accessKeyId: "local", secretAccessKey: "local" } 
