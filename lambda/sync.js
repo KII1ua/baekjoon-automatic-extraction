@@ -13,7 +13,6 @@ const dbClient = new DynamoDBClient({
 
 const STUDY_MEMBERS = { 
     "KII1ua": "skfnx13",
-    "Eunjin3395" : "jennyeunjin"
  };
 
 async function syncUser(bojId) {
