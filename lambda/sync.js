@@ -1,10 +1,14 @@
 const { DynamoDBClient, BatchWriteItemCommand } = require("@aws-sdk/client-dynamodb");
 const { marshall } = require("@aws-sdk/util-dynamodb");
 
+const IS_LOCAL = !process.env.AWS_LAMBDA_FUNCTION_NAME && !process.env.AWS_ACCESS_KEY_ID;
+
 const dbClient = new DynamoDBClient({
-    region: "ap-northeast-2",
-    endpoint: "http://localhost:8000",
-    credentials: { accessKeyId: "local", secretAccessKey: "local" }
+  region: AWS_REGION,
+  endpoint: IS_LOCAL ? LOCAL_ENDPOINT : undefined,
+  credentials: IS_LOCAL 
+    ? { accessKeyId: "local", secretAccessKey: "local" } 
+    : undefined
 });
 
 const STUDY_MEMBERS = { 
@@ -19,7 +23,7 @@ async function syncUser(bojId) {
     console.log(`\n🚀 [${bojId}] 문제 동기화 시작!`);
 
     while (true) {
-        // 💡 핵심: s@아이디 쿼리가 가장 정확합니다.
+        // s@아이디 쿼리
         const query = encodeURIComponent(`s@${bojId}`);
         const url = `https://solved.ac/api/v3/search/problem?query=${query}&page=${page}`;
         
