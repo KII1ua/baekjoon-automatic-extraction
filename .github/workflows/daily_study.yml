@@ -4,7 +4,7 @@ on:
   schedule:
     # 한국 시간 새벽 00시 (UTC 03:00)
     - cron: '0 15 * * *'
-  workflow_dispatch: # 수동 실행 버튼
+  workflow_dispatch:
 
 jobs:
   run-bot:
@@ -23,7 +23,6 @@ jobs:
 
       - name: Run Study Bot
         env:
-          # GitHub Secrets에서 가져온 환경 변수 주입
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
