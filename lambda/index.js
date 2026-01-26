@@ -16,7 +16,6 @@ const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 // 스터디 멤버
 const STUDY_MEMBERS = { 
   "KII1ua": "skfnx13",
-  "Eunjin3395": "jennyeunjin"
 };
 
 const LEVELS = [
