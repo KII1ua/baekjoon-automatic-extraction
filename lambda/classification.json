@@ -1,0 +1,220 @@
+{
+  "selectedPool": [
+    {
+      "tag": "dp",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "greedy",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "data_structures",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "recursion",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "backtracking",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "graph_traversal",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "stack",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "priority_queue",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "two_pointer",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "queue",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "bruteforcing",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "binary_search",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "sorting",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "dijkstra",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "string",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "trees",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "prefix_sum",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "hash_set",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "dfs",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "bfs",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "disjoint_set",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "bitmask",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "knapsack",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "shortest_path",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "parametric_search",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "topological_sorting",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    },
+    {
+      "tag": "floyd_warshall",
+      "level": {
+        "low": { "min": "s1", "max": "g4" },
+        "high": { "min": "g4", "max": "g1" }
+      },
+      "minParticipants": 1000
+    }
+  ]
+}
