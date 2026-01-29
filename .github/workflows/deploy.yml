@@ -3,7 +3,7 @@ name: Deploy to AWS Lambda
 on:
   push:
     branches:
-      - main  # main 브랜치에 push될 때만 배포
+      - main
 
 jobs:
   deploy:
