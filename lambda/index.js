@@ -101,7 +101,11 @@ exports.handler = async (event) => {
   const usedProblemIds = new Set();
 
   try {
-    await syncUser();
+    const memberIds = Object.values(STUDY_MEMBERS);
+    for (const bojId of memberIds) {
+      await syncUser(bojId);
+    }
+
     let attempts = 0;
     while (selectedProblems.length < 5 && attempts < 15) {
       attempts++;
