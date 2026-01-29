@@ -66,7 +66,6 @@ async function sendDiscordMessage(problems) {
   const dateOnly = fullTime.split(' ')[0];
 
   let messageContent = `📅 **${dateOnly} 코딩테스트**\n`;
-  messageContent += `오늘도 딱 5문제만 조져보자고! 🔥\n\n`;
 
   problems.forEach((p, idx) => {
     messageContent += `${idx + 1}. [**[${p.id}] ${p.title}**](${BAEKJOON_URL}/${p.id})\n`;
