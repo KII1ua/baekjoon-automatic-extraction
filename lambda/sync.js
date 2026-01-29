@@ -3,8 +3,10 @@ const { marshall } = require("@aws-sdk/util-dynamodb");
 
 const IS_LOCAL = !process.env.AWS_LAMBDA_FUNCTION_NAME && !process.env.AWS_ACCESS_KEY_ID;
 
+const AWS_REGION = "ap-southeast-2";
+
 const dbClient = new DynamoDBClient({
-  region: process.env.AWS_REGION,
+  region: AWS_REGION,
   endpoint: IS_LOCAL ? LOCAL_ENDPOINT : undefined,
   credentials: IS_LOCAL 
     ? { accessKeyId: "local", secretAccessKey: "local" } 
