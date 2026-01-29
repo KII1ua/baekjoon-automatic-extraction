@@ -1,5 +1,6 @@
 require("dotenv").config();
 
+const { syncUser } = require('./sync');
 const { DynamoDBClient, GetItemCommand } = require("@aws-sdk/client-dynamodb");
 const { marshall } = require("@aws-sdk/util-dynamodb");
 const pool = require('./classification.json');
@@ -100,6 +101,7 @@ exports.handler = async (event) => {
   const usedProblemIds = new Set();
 
   try {
+    await syncUser();
     let attempts = 0;
     while (selectedProblems.length < 5 && attempts < 15) {
       attempts++;

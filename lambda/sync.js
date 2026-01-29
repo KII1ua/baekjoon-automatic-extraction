@@ -79,10 +79,4 @@ async function syncUser(bojId) {
     }
 }
 
-async function run() {
-    for (const id of Object.values(STUDY_MEMBERS)) {
-        await syncUser(id);
-    }
-}
-
-run();
+module.exports = { syncUser };
